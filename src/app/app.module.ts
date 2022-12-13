@@ -7,6 +7,7 @@ import { CapitalizePhillipsPipe } from './pipes/capitalize-phillips.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardListComponent } from './components/card-list/card-list.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ContentCardComponent } from './components/content-card/content-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ModalComponent } from './components/modal/modal.component';
     CapitalizePhillipsPipe,
     NavbarComponent,
     CardListComponent,
-    ModalComponent
+    ModalComponent,
+    ContentCardComponent
   ],
   imports: [
     BrowserModule,
