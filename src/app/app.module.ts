@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CapitalizePhillipsPipe } from './pipes/capitalize-phillips.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CardListComponent } from './components/card-list/card-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizePhillipsPipe,
-    NavbarComponent
+    NavbarComponent,
+    CardListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<ul class="d-flex flex-column gap-4">
+  <li class="card" style="width: 18rem" *ngFor="let foto of arrayFotos">
+    <img [src]="foto.url" class="card-img-top" [alt]="foto.description" />
+    <div class="card-body">
+      <p class="card-text">{{ foto.description }}</p>
+    </div>
+  </li>
+</ul>
