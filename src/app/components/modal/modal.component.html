@@ -5,11 +5,7 @@
 <div *ngIf="showModal" class="modal">
   <div class="modal__content">
     <h1>Example modal</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
-      libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
-      voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!
-    </p>
+    <ng-content></ng-content>
     <a (click)="showModal = false" class="modal__close">&times;</a>
   </div>
 </div>
