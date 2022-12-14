@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardListComponent } from './components/card-list/card-list.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { ContentCardComponent } from './components/content-card/content-card.component';
+import { IfElseComponent } from './components/if-else/if-else.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,11 @@ import { ContentCardComponent } from './components/content-card/content-card.com
     NavbarComponent,
     CardListComponent,
     ModalComponent,
-    ContentCardComponent
+    ContentCardComponent,
+    IfElseComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

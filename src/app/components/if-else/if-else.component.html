@@ -1,0 +1,22 @@
+<label for="">
+  Nome:
+  <input type="text" [(ngModel)]="name" />
+  <p class="text-success" *ngIf="name.length > 2; else templateElse">
+    Nome válido
+  </p>
+  <ng-template #templateElse>
+    <p class="text-danger" *ngIf="name.length > 0">
+      O nome deve ter mais que 2 caracteres
+    </p>
+  </ng-template>
+</label>
+<!-- <div>
+  <h3>Digite uma senha:</h3>
+  <input type="password" min="5" [(ngModel)]="password" />
+  <p *ngIf="password.length > 5; else templateElse">
+    Senha possui mais que 5 caracteres, está tudo certo :)
+  </p>
+  <ng-template #templateElse>
+    <p>Senha deve conter mais que 5 caracteres</p>
+  </ng-template>
+</div> -->
