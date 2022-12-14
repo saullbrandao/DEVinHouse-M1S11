@@ -1,0 +1,15 @@
+<div class="container">
+  <label>
+    Adicionar Tarefa:
+    <input type="text" [(ngModel)]="todo" />
+  </label>
+  <button class="btn btn-primary" (click)="addTodo()">Adicionar</button>
+
+  <ul *ngIf="todoList.length > 0; else emptyList">
+    <li *ngFor="let todo of todoList">{{ todo }}</li>
+  </ul>
+
+  <ng-template #emptyList>
+    <p>A lista de tarefas está vazia</p>
+  </ng-template>
+</div>

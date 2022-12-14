@@ -10,6 +10,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { ContentCardComponent } from './components/content-card/content-card.component';
 import { IfElseComponent } from './components/if-else/if-else.component';
 import { FormsModule } from '@angular/forms';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     ModalComponent,
     ContentCardComponent,
     IfElseComponent,
+    TodoListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
